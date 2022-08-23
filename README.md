@@ -1,2 +1,2 @@
 # GITMASTER
-College project for learning github and gitflow
+College project for learn github and gitflow

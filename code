@@ -1,6 +1,17 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+void mediaVetor(int vet[]){ /// função media do vetor
+  float media=0, soma = 0;
+  int i;
+
+  for(i =0; i<1000; i++){
+    soma = soma + vet[i];
+  }
+  media = soma/1000;
+printf("\nmedia:%.2f",media);
+  return;
+}
 void imprimir_vetor (int vetor[])     ///funcao printar vetor
 {
 int Contador;
@@ -19,6 +30,7 @@ int main()
         v[i] = rand() % 1000;       /// comando para pegar numero random para cada espaço do vetor
     }
     imprimir_vetor(v);              ///chamar função para imprimir vetor
+    mediaVetor(v);                  /// media do vetor
     return 0;                       ///fim do programa
 }
 

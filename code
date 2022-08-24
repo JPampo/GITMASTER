@@ -1,22 +1,24 @@
+
 #include <stdio.h>
 #include <stdlib.h>
+void imprimir_vetor (int vetor[])
+{
+int Contador;
+for(Contador = 0; Contador<1000; Contador++)
+{
+ printf("%d, ",vetor[Contador]);
+}
+}
 
 int main()
 {
-    printf("ZA WARUDO: \n\n");
     int i=0;
     int v[1000];
     for(i=0;i<1000;i++)
     {
         v[i] = rand() % 1000;
     }
-    
-    for(i=0;i<1000;i++)
-    {
-        printf("%d, ",v[i]);
-    }
-    
+    imprimir_vetor(v);
     return 0;
 }
-
 

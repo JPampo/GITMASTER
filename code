@@ -1,10 +1,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-void imprimir_vetor (int vetor[])
+void imprimir_vetor (int vetor[])     ///funcao printar vetor
 {
 int Contador;
-for(Contador = 0; Contador<1000; Contador++)
+for(Contador = 0; Contador<1000; Contador++)   
 {
  printf("%d, ",vetor[Contador]);
 }
@@ -12,13 +12,13 @@ for(Contador = 0; Contador<1000; Contador++)
 
 int main()
 {
-    int i=0;
+    int i=0;                        ///i é variavel para somatório
     int v[1000];
     for(i=0;i<1000;i++)
     {
-        v[i] = rand() % 1000;
+        v[i] = rand() % 1000;       /// comando para pegar numero random para cada espaço do vetor
     }
-    imprimir_vetor(v);
-    return 0;
+    imprimir_vetor(v);              ///chamar função para imprimir vetor
+    return 0;                       ///fim do programa
 }
 
